@@ -4,18 +4,20 @@
       <div class="side-nav">
         <div class="logo-heading">
           <h3>Admin Panel</h3>
-          <h4>Welcome <span>Shubham</span></h4>
+          <h4>Welcome <span>{{adminName}}</span></h4>
         </div>
         <div class="nav-menu">
           <ul class="menu-items">
-            <li class="list"><a href="#">dashboard</a></li>
-            <li class="list"><a href="#">Categories</a></li>
-            <li class="list"><a href="#">Add Products</a></li>
-            <li class="list"><a href="#">All Products</a></li>
-            <li class="list"><a href="#">Profile</a></li>
+            <li class="list"><i class="fa-solid fa-house" ></i><a routerLink="dashboard">Dashboard</a></li>
+            <li class="list"><i class="fa-solid fa-list"></i><a routerLink="add-category">Categories</a></li>
+            <li class="list"><i class="fa-brands fa-product-hunt"></i><a routerLink="add-product">Add Products</a></li>
+            <li class="list"><i class="fa-solid fa-list"></i><a routerLink="products">All Products</a></li>
+            <li class="list"><i class="fa-solid fa-user"></i><a routerLink="profile">Profile</a></li>
           </ul>
         </div>
-        <a href="#" class="sign-in-btn">Sign Out</a>
+        
+        <a routerLink="sign-in" *ngIf="!IsLoggedIn()" class="sign-btn"><i class="fa-solid fa-right-from-bracket"></i>Sign In</a>
+        <a (click)="SignOut()" *ngIf="IsLoggedIn()" class="sign-btn"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
 
       </div>
     </div>

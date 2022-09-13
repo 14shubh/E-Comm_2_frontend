@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="login-box">
+    <div class="form-group">
+      <label for="email">Email : </label>
+      <input type="email" name="email" id="email" class="form-control" [(ngModel)]="admin.email
+      " aria-describedby="helpId">
+      <!-- <small id="helpId" class="text-muted">Help text</small> -->
+    </div>
+    <div class="form-group">
+      <label for="email">Password : </label>
+      <input type="password" name="password" id="password" class="form-control" [(ngModel)]="admin.password" aria-describedby="helpId">
+      <!-- <small id="helpId" class="text-muted">Help text</small> -->
+    </div>
+
+
+    <div class="button">
+      <a class="sign-in-btn" (click)="SignIn()">Sign In</a>
+    </div>
+
+  </div>
+</div>
+

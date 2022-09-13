@@ -20,6 +20,9 @@
 .side-nav .logo-heading h4{
   font-size: 14px;
   letter-spacing: 1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .side-nav .nav-menu{
   padding: 25px 20px;
@@ -29,12 +32,18 @@
 .side-nav .nav-menu .menu-items .list{
   margin-top: 25px;
   padding: 5px;
+  list-style: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.164);
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
+}
+.side-nav .nav-menu .menu-items .list i{
+  vertical-align: auto;
+  font-size: 14px;
+  margin-right: 15px;
 }
 .side-nav .nav-menu .menu-items .list a{
   font-size: 16px;
@@ -50,7 +59,7 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.side-nav .sign-in-btn{
+.side-nav .sign-btn{
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -64,6 +73,7 @@
   letter-spacing: 1px;
   background: var(--primary-color);
   padding: 10px 5px;
+  cursor: pointer;
   border-radius: 5px;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -74,9 +84,9 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-/* .side-nav .nav-footer .sign-in-btn{
-  font-size: 18px;
-  color: #333;
-  padding: 55px 20px;
-  background: #fff;
-} */
+.side-nav .sign-btn i{
+  margin-right: 15px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+

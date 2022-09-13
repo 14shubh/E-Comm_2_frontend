@@ -8,5 +8,8 @@
         "latex",
         "plaintext",
         "html"
+    ],
+    "cSpell.words": [
+        "Apiurl"
     ]
 }
