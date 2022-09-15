@@ -29,8 +29,6 @@ export class AdminComponent implements OnInit{
   }
   ngDoCheck(): void{
     this.adminName = sessionStorage.getItem('admin-info');
-    this.adminName = JSON.parse(this.adminName);
-
   }
 
 }

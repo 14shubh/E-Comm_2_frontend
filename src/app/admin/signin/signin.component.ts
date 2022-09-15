@@ -14,7 +14,7 @@ export class SigninComponent implements OnInit {
   public SignIn(){
     this._admin.login(this.admin).subscribe((data)=>{
       if(data['message'] == 'success'){
-        sessionStorage.setItem('admin-info',JSON.stringify(data['result'].name));
+        sessionStorage.setItem('admin-info',data['result'].name);
         sessionStorage.setItem('auth-token',data['token']);
         this._router.navigate(['admin/dashboard']);
       }else{

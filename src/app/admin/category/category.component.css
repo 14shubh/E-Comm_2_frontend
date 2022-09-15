@@ -1,0 +1,12 @@
+/* .modal-dialog{
+  top: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+} */
+.form-group{
+  padding: 10px;
+  margin: 10px 0;
+}
